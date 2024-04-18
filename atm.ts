@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 
 let myBalance:number=90000
@@ -31,7 +31,8 @@ if(response3.withdrawAmount>myBalance){
     console.log("Insufficient Balance!")
 }
 else{
-console.log(`You have withdrawn $ ${response3.withdrawAmount}\n Your remaining balance is ${myBalance-=response3.withdrawAmount}`)
+console.log(`You have withdrawn $ ${response3.withdrawAmount}\n Your remaining balance is
+ ${myBalance-=response3.withdrawAmount}`)
 }
 }
 else if(response2.selectOpt==="Fast Cash"){
@@ -41,7 +42,8 @@ type:"list",
 message:"Select an option for Fast Cash:",
 choices:["5000","10000","15000","20000"]
 })
-console.log(`You have withdrawn $ ${response4.fastOption}\n Your remaining balance is ${myBalance-=response4.fastOption}`)
+console.log(`You have withdrawn $ ${response4.fastOption}\n 
+Your remaining balance is ${myBalance-=response4.fastOption}`)
 }
 else if(response2.selectOpt==="Check Balance"){
 

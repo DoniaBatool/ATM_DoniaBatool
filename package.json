@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "publishConfig": {
+"access": "public"
+
+  },
   "bin": "atm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "doniabatool_atm": "^1.0.0",
     "inquirer": "^9.2.16"
   },
   "devDependencies": {

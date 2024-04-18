@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 90000;
 let pinCode = 3139;
@@ -26,7 +27,8 @@ if (response1.myPin === pinCode) {
                 console.log("Insufficient Balance!");
             }
             else {
-                console.log(`You have withdrawn $ ${response3.withdrawAmount}\n Your remaining balance is ${myBalance -= response3.withdrawAmount}`);
+                console.log(`You have withdrawn $ ${response3.withdrawAmount}\n Your remaining balance is
+ ${myBalance -= response3.withdrawAmount}`);
             }
         }
         else if (response2.selectOpt === "Fast Cash") {
@@ -36,7 +38,8 @@ if (response1.myPin === pinCode) {
                 message: "Select an option for Fast Cash:",
                 choices: ["5000", "10000", "15000", "20000"]
             });
-            console.log(`You have withdrawn $ ${response4.fastOption}\n Your remaining balance is ${myBalance -= response4.fastOption}`);
+            console.log(`You have withdrawn $ ${response4.fastOption}\n 
+Your remaining balance is ${myBalance -= response4.fastOption}`);
         }
         else if (response2.selectOpt === "Check Balance") {
             console.log(`Your  Current Balance is ${myBalance}`);
